@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>School Times – Test Site</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+
+    .article {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    .article h2 {
+      margin-top: 0;
+    }
+
+    .sidebar {
+      background: white;
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    footer {
+      margin-top: 40px;
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>School Times</h1>
+    <p>The official school newspaper (test version)</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">News</a>
+    <a href="#">Events</a>
+    <a href="#">Opinions</a>
+    <a href="#">About</a>
+  </nav>
+
+  <main class="container">
+    <section>
+      <div class="article">
+        <h2>Welcome to the School Times</h2>
+        <p><strong>By Editorial Team</strong> · Today</p>
+        <p>
+          This is a test website for our school newspaper. Here we will publish
+          news, events, interviews, and student opinions. This layout is just a
+          prototype and will be improved step by step.
+        </p>
+      </div>
+
+      <div class="article" style="margin-top:20px;">
+        <h2>Example Article</h2>
+        <p><strong>By Student Name</strong></p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Latest Updates</h3>
+      <ul>
+        <li>New editor team announced</li>
+        <li>Sports day next Friday</li>
+        <li>Interview with the principal</li>
+      </ul>
+
+      <h3>Follow Us</h3>
+      <p>Instagram · School Website</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>© 2026 School Times | Test Website</p>
+  </footer>
+
+</body>
+</html>
